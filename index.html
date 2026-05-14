@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="form-panel">
+
+      <div class="heading">
+        <h1>Resume Builder</h1>
+        <p>Create your professional resume in real time</p>
+      </div>
+
+      <form id="resumeForm">
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="row">
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+          </div>
+
+        </div>
+
+        <div class="input-group">
+          <label>Professional Summary</label>
+          <textarea id="summary" rows="4" placeholder="Write about yourself"></textarea>
+        </div>
+
+        <!-- Skills -->
+
+        <div class="section-box">
+
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skill-add-box">
+            <input type="text" id="skillInput" placeholder="Add a skill">
+            <button type="button" id="addSkillBtn">Add</button>
+          </div>
+
+          <div id="skillsContainer"></div>
+
+        </div>
+
+        <!-- Experience -->
+
+        <div class="section-box">
+
+          <div class="section-title">
+            <h2>Experience</h2>
+          </div>
+
+          <input type="text" id="company" placeholder="Company Name">
+          <input type="text" id="role" placeholder="Job Role">
+          <input type="text" id="duration" placeholder="Duration">
+
+          <button type="button" class="experience-btn" id="addExperienceBtn">
+            Add Experience
+          </button>
+
+          <div id="experienceContainer"></div>
+
+        </div>
+
+        <button type="submit" class="save-btn">
+          Save Resume
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="preview-panel">
+
+      <div class="resume-preview">
+
+        <div class="top-section">
+
+          <div class="profile-circle" id="profileCircle">
+            E
+          </div>
+
+          <div>
+            <h1 id="previewName">Your Name</h1>
+            <p id="previewEmail">example@email.com</p>
+            <p id="previewPhone">+91 9876543210</p>
+          </div>
+
+        </div>
+
+
+        <div class="preview-block">
+          <h2>Profile</h2>
+          <p id="previewSummary">
+            Your professional summary will appear here.
+          </p>
+        </div>
+
+
+        <div class="preview-block">
+          <h2>Skills</h2>
+          <div class="preview-skills" id="previewSkills"></div>
+        </div>
+
+
+        <div class="preview-block">
+          <h2>Experience</h2>
+          <div id="previewExperience"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
