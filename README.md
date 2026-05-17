@@ -93,18 +93,6 @@ Data Persistence using localStorage
 
 ---
 
-# 📸 Preview
-
-<div align="center">
-
-### Resume Builder Interface
-
-*Add screenshots or demo GIFs here*
-
-</div>
-
----
-
 # 📂 Project Structure
 
 ```text id="8wz7mg"
