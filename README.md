@@ -176,6 +176,4 @@ The project was designed to simulate a real-world resume generation platform whi
 
 <br/>
 
-⭐ If you found this project useful, consider giving it a star on GitHub!
-
 </div>
